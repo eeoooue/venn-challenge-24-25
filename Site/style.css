@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+#site-header {
+  background-color: #333;
+  height: 5.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#site-header a {
+  text-decoration: none;
+  color: white;
+  margin: 1vw;
+}
+
+#site-header a:hover {
+  color: #ddd;
+}
+
+#site-header .left-box,
+#site-header .right-box {
+  margin: 0 1vh;
+  display: flex;
+}
+
+#site-header .anchor-tags {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.toplevel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vh auto;
+  width: fit-content;
+  max-width: 90vw;
+}
+
+#tall-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#grid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  background-color: #1d1d1d;
+  height: 42px;
+  width: 42px;
+  margin: 2px;
+}
+
+#answer-field,
+#question-selector,
+#generate-hash-button {
+  display: block;
+  margin: 10px auto;
+}
+
+#answer-field {
+  height: 100px;
+  width: 80%;
+  text-align: center;
+}
+
+#question-selector,
+#generate-hash-button {
+  padding: 4px 24px;
+}
+
+.hint-btn-box{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.hint-btn{
+  padding: 4px 32px;
+  margin: 2px 2px;
+}
+
+.hint-btn-row {
+  display: flex;
+  justify-content: center;
+}
